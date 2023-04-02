@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Creepster&family=Dancing+Script&family=Delicious+Handrawn&family=Leckerli+One&family=Mulish:wght@300&family=Permanent+Marker&family=Secular+One&family=Varela+Round&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script&family=Delicious+Handrawn&family=Leckerli+One&family=Mulish:wght@300&family=Permanent+Marker&family=Varela+Round&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Carter+One&family=Creepster&family=Dancing+Script&family=Delicious+Handrawn&family=Leckerli+One&family=Mulish:wght@300&family=Permanent+Marker&family=Secular+One&family=Varela+Round&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Alex+Brush&family=Carter+One&family=Creepster&family=Dancing+Script&family=Delicious+Handrawn&family=Leckerli+One&family=Marck+Script&family=Mulish:wght@300&family=Permanent+Marker&family=Secular+One&family=Varela+Round&family=Zeyada&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+:root{
+  --bg-color-body:#2d3436;
+  --color: #ffffff;
+  --profile-hover-color:#C4E538;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background:linear-gradient(#00c3ff,#ffff1c) ;
+  color: var(--color);
+}
+
+.nav-bar{
+  font-family: 'Alex Brush', cursive;
+  height: 10vh;
+  padding: 20px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.profile-tab{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.bar-icon{
+  display: none;
+}
+
+.home:hover{
+  cursor: pointer;
+  color:var(--profile-hover-color);
+  transition: 0.5s ease-in-out;
+}
+
+.about:hover{
+  cursor: pointer;
+  color:var(--profile-hover-color);
+  transition: 0.5s ease-in-out;
+}
+
+.skills:hover{
+  cursor: pointer;
+  color:var(--profile-hover-color);
+  transition: 0.5s ease-in-out;
+}
+
+.project:hover{
+  cursor: pointer;
+  color:var(--profile-hover-color);
+  transition: 0.5s ease-in-out;
+}
+
+
+.social-icon-contact{
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: auto;
+}
+
+.icon-btn{
+  width: 30%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+[alt="insta"]:hover{
+  box-sizing: border-box;
+  padding: 1px;
+  border-radius: 5px; 
+  box-shadow:#fff 0px 5px 15px;
+transition: 0.5s;
+}
+
+[alt="twitter"]:hover{
+  box-sizing: border-box;
+  padding: 1px;
+  border-radius: 5px;
+  box-shadow:#fff 0px 5px 15px;
+  transition: 0.5s;
+}
+
+[alt="linkedin"]:hover{
+  box-sizing: border-box;
+  padding: 1px;
+  border-radius: 5px;
+  box-shadow: #fff 0px 5px 15px;
+  transition: 0.5s;
+}
+
+.contact{
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.massage{
+  display: none;
+}
+
+
+.download-cv{
+  font-family: 'Permanent Marker';
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+}
+
+.download-cv a{
+  font-size: 1.2rem;
+  color: #000000;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.contact :hover{
+  background-color: #5758BB !important;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+/* For home css */
+
+
+.heading{
+  font-family: 'Alex Brush',cursive;
+  padding: 10px 100px;
+  font-size: 5rem;
+  text-align: left;
+  text-decoration: underline;
+}
+
+
+.home-section{
+  min-height: 90vh;
+  font-family: 'Carter One', cursive;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-info{
+  width: 43%;
+}
+
+.personal-info h1{
+  font-size: 5rem;
+}
+
+.user-image {
+  height: 100%;
+  width: 50%;
+}
+
+.user-image img{
+  height: 400px;
+  width: 100%;
+}
+
+/* css for about */
+#about{
+  background: linear-gradient(#4568DC,#B06AB3);
+}
+
+.about-para{
+  font-family: 'Varela Round';
+  padding: 10px 100px 50px 100px;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+/* CSS for skill */
+
+#skill{
+  background: linear-gradient(#DCE35B,#45B649);
+  }
+
+.skill{
+  font-family: 'creepster',cursive;
+  padding: 10px 100px 50px 100px;
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.language{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.language span{
+  font-size: 5rem;
+}
+
+/* css for projects */
+
+#projects{
+  background: linear-gradient(#a770ef, #cf8bf3,#fdb99b);
+}
+.project-cont{
+  min-height: 80vh;
+  padding: 10px 100px 50px 100px;
+  font-family: 'Aclonica', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.single-project-1{
+  min-height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  background: url('https://img.freepik.com/premium-photo/3d-rendering-weather-forecast-icon-clean-background-mock-up-web-banner-cartoon-interface-design-minimal-metaverse-concept_106651-4455.jpg?w=2000');
+  background-size: 400px 400px;
+  margin-bottom: 50px;
+  opacity: 0.8;
+}
+
+.single-project-1:hover{
+  box-shadow: #12CBC4 0px 50px 100px -20px, #12CBC4 0px 30px 60px -30px, #12CBC4 0px -2px 6px 0px inset;
+  opacity: 1.0;
+}
+
+.single-project-1 ul{
+  padding: 10px 20px;
+  list-style:none;
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  color:#5758BB;
+}
+
+.single-project-1 ul li ul{
+  padding: 10px;
+  list-style: square;
+  color: coral;
+}
+
+.single-project-2{
+  min-height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  background: url('data:image/png;base64,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');
+  background-size: 400px 400px;
+  margin-bottom: 50px;
+  opacity: 0.8;
+}
+
+.single-project-2:hover{
+  box-shadow: #12CBC4 0px 50px 100px -20px, #12CBC4 0px 30px 60px -30px, #12CBC4 0px -2px 6px 0px inset;
+  opacity: 1.0;
+}
+
+.single-project-2 ul{
+  padding: 10px 20px;
+  list-style:none;
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  color:#1B1464;
+}
+
+.single-project-2 ul li ul{
+  padding: 10px;
+  list-style: square;
+  color: #1B1464;
+}
+
+
+.project-name-1{
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color:#5758BB;
+}
+
+
+.project-name-2{
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color:#1B1464;
+}
+
+.project-description{
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-description button{
+  padding: 10px;
+  border: none;
+  background-color: #009432;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.project-description button a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* css for contact */
+
+#contact{
+  background: linear-gradient(#a770ef, #cf8bf3,#fdb99b);
+
+}
+
+.sub-heading{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: underline;
+}
+
+#form{
+  min-height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#name, #email, #number,#desc{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+#submit{
+  border: none;
+  padding: 10px 30px;
+  margin-left: -21.5%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #5758BB;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.footer{
+  font-family: 'Permanent Marker';
+  height: 10vh;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width:780px) {
+  .bar-icon{
+    display: flex;
+  }
+  .profile-tab{
+    display: none;
+  }
+  .massage{
+    display: flex;
+    position: fixed;
+    right: 20px;
+    margin-top: 25px;
+    gap: 20px;
+  }
+  .contact{
+    display: none;
+  }
+
+  .home-section{
+    min-height: 65vh;
+    padding: 40px;
+    }
+
+    .heading{
+      text-align: center;
+      padding: 10px 40px;
+      font-size: 4.5rem;
+    }
+  .personal-info h1{
+    font-size: 3rem;
+    
+  }  
+  .user-image {
+  display: none;
+  }  
+
+  .about-para{
+    text-align: justify;
+    padding: 10px 30px;
+    word-break: normal;
+  }
+
+  .download-cv{
+    padding: 10px;
+  }
+
+  .skill{
+    padding-bottom:20px ;
+    flex-direction: column;
+  }
+
+  .project-cont{
+    padding: 0 50px;    
+  }
+ 
+#name, #email, #number,#desc{
+  width: 70%;
+}
+#submit{
+  margin-left: -38.5%;
+}
+}
